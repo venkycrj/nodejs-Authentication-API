@@ -1,0 +1,33 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+    "username" : "venky",
+    "name" : "venkatesh",
+    "password": "venky123@",
+    "gender": "male",
+    "location" : "Kolkata"
+
+}
+
+####
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "venky",
+    "password": "venky123@"
+}
+
+####
+
+PUT http://localhost:3000/change-password/
+Content-Type: application/json 
+
+{
+    "username": "venky",
+    "oldPassword": "venky123@",
+    "newPassword": "venky@123"
+}
+
+####
